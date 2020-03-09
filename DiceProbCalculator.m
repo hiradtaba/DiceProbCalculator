@@ -34,9 +34,9 @@ prob = b ./ x;
 p = max(prob);
 [~,I] = find(prob==p);
 
-Sums = a'; % creating the transpose of the sums array (for the table)
-Frequency = b'; % creating the transpose of the frequency arry (for the table) 
-Probabilities = prob'; % creating the trnaspose of the probabilitites array
+Sums = a'; % creating the transpose of the sums array
+Frequency = b'; % creating the transpose of the frequency array
+Probabilities = prob'; % creating the transpose of the probabilities array
 
 output = table(Sums,Frequency,Probabilities) % creating a table containing the sums, the frequencies
 % and the probabilities values
